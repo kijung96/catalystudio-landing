@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schedule — Catalystudio</title>
+<link rel="icon" href="./brand_logo/catalystudio_Logo_Black.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="./index.html" class="logo"><img src="./brand_logo/catalystudio_Logo_Black.png" alt="Catalystudio"></a>
+    <button class="nav-toggle" aria-label="메뉴 열기">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="nav">
+      <button class="nav-close" aria-label="메뉴 닫기">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <ul class="nav-list">
+        <li><a href="./space.html">SPACE</a></li>
+        <li><a href="./guide.html">GUIDE</a></li>
+        <li><a href="./location.html">LOCATION</a></li>
+        <li><a href="./schedule.html" aria-current="page">SCHEDULE</a></li>
+      </ul>
+    </nav>
+    <div class="nav-scrim"></div>
+  </div>
+</header>
+
+<section class="section page-hero-block">
+  <div class="wrap">
+    <h1 class="section-title p-30">SCHEDULE</h1>
+    <div class="section-hr"></div>
+    <p class="section-subdes p-14" style="max-width:640px;">
+      예약 현황을 확인하고, 원하는 플랫폼에서 예약해 주세요.
+    </p>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="section">
+  <div class="wrap" style="padding-bottom:60px;">
+    <div class="section-subtitle p-20">이용 요금</div>
+
+    <div class="price-card" style="max-width:480px;margin-top:20px;">
+      <div class="price-row" style="border-top:none;">
+        <div>
+          <div class="info-label p-14">기본 요금 (6인 기준)</div>
+        </div>
+        <div class="price-amount p-30">40,000<span class="p-14" style="font-weight:400;"> 원/시간</span></div>
+      </div>
+      <div class="price-row">
+        <div class="p-16">추가 인원</div>
+        <div class="p-16" style="font-weight:700;">5,000원 / 인·시간</div>
+      </div>
+      <div class="price-row">
+        <div class="p-16">키친 사용</div>
+        <div class="p-14" style="text-align:right;">사용 예약 필수<br>(조리시설 이용 시)</div>
+      </div>
+    </div>
+
+    <div class="offer-banner">
+      <span class="offer-tag p-14">Open Offer</span>
+      <span class="p-14">신규오픈 기념, 지금 예약 시 이용시간 <b>+1시간 무료</b></span>
+    </div>
+  </div>
+</section>
+
+<!-- Calendar + reservation -->
+<section class="section" style="border-top:1px solid #eee;">
+  <div class="wrap" style="padding-top:50px;padding-bottom:60px;">
+    <div class="section-subtitle p-20">예약 현황 &amp; 예약하기</div>
+
+    <div style="display:grid;grid-template-columns:1fr;gap:30px;margin-top:20px;">
+      <div class="calendar-embed">
+        <p class="p-16" style="font-weight:700;margin-bottom:12px;">통합 예약 현황 캘린더</p>
+        <iframe src="https://calendar.google.com/calendar/embed?src=e3d23c7c456f2e204920d4e682d0657de370cfeeb2186c5e03a4534ed84baa4d%40group.calendar.google.com&ctz=Asia%2FSeoul"
+                style="border:0" width="100%" height="600" frameborder="0" scrolling="no" loading="lazy"
+                title="카탈리스튜디오 예약 현황 캘린더"></iframe>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px;max-width:480px;">
+        <a href="https://hourplace.co.kr/place/62229" target="_blank" rel="noopener" class="btn btn-block" style="justify-content:space-between;">
+          <span>아워플레이스에서 예약하기</span><span aria-hidden="true">→</span>
+        </a>
+        <a href="https://naver.me/xM5Z46AY" target="_blank" rel="noopener" class="btn btn-outline btn-block" style="justify-content:space-between;">
+          <span>네이버 지도에서 보기</span><span aria-hidden="true">→</span>
+        </a>
+        <button type="button" aria-disabled="true" disabled class="btn btn-outline btn-block" style="justify-content:space-between;">
+          <span>스페이스클라우드 (준비중)</span><span aria-hidden="true">·</span>
+        </button>
+        <a href="tel:01089665460" class="btn btn-outline btn-block" style="justify-content:space-between;">
+          <span>전화 문의 · 010-8966-5460</span><span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-box">
+    <div class="footer-col" style="max-width:220px;">
+      <img src="./brand_logo/catalystudio_Logo_Black.png" alt="Catalystudio" class="footer-logo">
+    </div>
+    <div class="footer-col">
+      <div class="footer-title p-20">ABOUT</div>
+      <p class="footer-des p-14">
+        카탈리(CATALY)는 'Catalyst(촉매)'에서 영감을 받은 이름으로, 사람과 아이디어, 콘텐츠가 만나
+        새로운 결과를 만들어내는 공간이라는 의미를 담고 있습니다.
+      </p>
+    </div>
+    <div class="footer-col">
+      <a class="footer-link-row" href="./schedule.html">
+        <div class="footer-title p-20" style="margin-bottom:0;">RESERVATION</div>
+        <span class="footer-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+      <p class="footer-des p-14 footer-block">서울 강남구 봉은사로68길 21 지하1층</p>
+      <div class="footer-title p-20">CONTACT</div>
+      <p class="footer-des p-14 footer-block">Tel 010-8966-5460</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="p-14">서울 강남구 봉은사로68길 21 지하1층 | Catalystudio</p>
+    <p class="p-14">copyright &copy; CATALYSTUDIO</p>
+  </div>
+</footer>
+
+<script src="./js/site.js"></script>
+</body>
+</html>
