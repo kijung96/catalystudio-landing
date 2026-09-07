@@ -1,7 +1,7 @@
 /* ============================================================
    CATALYSTUDIO — shared design system
    Structurally & stylistically matched to https://studiostretta.kr/
-   (Pretendard font, fluid root sizing, white header / #1e1e1e footer,
+   (Pretendard font, fluid root sizing, white header / #000 footer,
    editorial hero-title-over-image, ABOUT block, minimal nav)
    ============================================================ */
 
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Pretendard'; margin: 0; font-weight: 700;
   align-items: center;
   justify-content: space-between;
 }
-.site-header .logo img { width: 120px; }
+.site-header .logo img { width: 44px; display: block; }
 .nav { display: flex; align-items: center; }
 .nav-list { list-style: none; display: flex; align-items: center; margin: 0; padding: 0; }
 .nav-list > li { margin-left: 10px; margin-right: 10px; }
@@ -81,6 +81,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Pretendard'; margin: 0; font-weight: 700;
   color: #333;
 }
 .nav-toggle svg { width: 24px; height: 24px; }
+.nav-close { display: none; }
 
 @media (max-width: 767px) {
   .site-header .wrap { padding: 0 20px; }
@@ -99,9 +100,11 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Pretendard'; margin: 0; font-weight: 700;
   .nav-list { flex-direction: column; }
   .nav-list > li { margin: 14px 0; }
   .nav-close {
+    display: inline-flex;
     position: absolute; top: 20px; right: 20px;
     background: none; border: 0; cursor: pointer; color: #333;
     width: 40px; height: 40px;
+    align-items: center; justify-content: center;
   }
   .nav-close svg { width: 22px; height: 22px; }
   .nav-scrim {
@@ -121,13 +124,16 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Pretendard'; margin: 0; font-weight: 700;
 
 .hero-title {
   position: absolute;
-  top: 50%; right: 15%;
-  transform: translateY(-50%);
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
   color: #fff;
-  text-align: right;
-  line-height: 1.4;
-  font-weight: 900;
-  text-shadow: 0 2px 24px rgba(0,0,0,.25);
+  text-align: center;
+  line-height: 1.35;
+  font-family: 'Playfair Display', 'Pretendard', serif;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 0 2px 24px rgba(0,0,0,.35);
   z-index: 2;
 }
 
@@ -153,10 +159,21 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Pretendard'; margin: 0; font-weight: 700;
 .about-row > div { width: 100%; }
 .about-media { }
 .about-media img { width: 100%; height: 100%; object-fit: cover; }
+.obj-left { object-position: left center; }
+.obj-bottom { object-position: center bottom; }
 .about-copy { padding: 20px; }
 @media (max-width: 767px) {
   .about-row { flex-direction: column; }
 }
+
+.about-stack {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  max-width: 640px; margin: 0 auto;
+}
+.about-stack .about-media-single { width: 100%; max-width: 560px; margin-top: 24px; }
+.about-stack .about-media-single img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.about-stack .about-copy-single { margin-top: 28px; }
+.about-stack .about-copy-single .btn { margin-top: 20px; }
 
 .page-hero-block { padding-top: 50px; padding-bottom: 20px; }
 
@@ -169,7 +186,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Pretendard'; margin: 0; font-weight: 700;
   font-weight: 500;
   transition: background-color .2s ease, color .2s ease, border-color .2s ease;
 }
-.tag:hover { background: #1e1e1e; border-color: #1e1e1e; color: #fff; }
+.tag:hover { background: #000; border-color: #000; color: #fff; }
 
 /* ============ ZONE GRID (space.html) ============ */
 .zone-grid {
@@ -237,7 +254,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Pretendard'; margin: 0; font-weight: 700;
 .price-amount { font-weight: 900; }
 .offer-banner {
   display: inline-flex; align-items: center; gap: 12px;
-  background: #1e1e1e; color: #fff; padding: 16px 22px; margin-top: 24px;
+  background: #000; color: #fff; padding: 16px 22px; margin-top: 24px;
 }
 .offer-banner b { color: #fff; }
 .offer-tag { color: #dadada; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
@@ -266,20 +283,31 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Pretendard'; margin: 0; font-weight: 700;
 .info-row:last-child { border-bottom: 1px solid #eee; }
 .info-label { color: #9c9c9c; margin-bottom: 4px; }
 .info-value { font-weight: 700; }
-.map-frame { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.map-frame { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
 
 /* ============ FOOTER ============ */
-.site-footer { width: 100%; background: #1e1e1e; color: #9c9c9c; }
+.site-footer { width: 100%; background: #000; color: #9c9c9c; }
 .footer-box {
   display: flex; align-items: stretch; width: 100%;
 }
-.footer-col { width: 100%; padding: 20px; }
-.footer-logo { width: 150px; filter: invert(80%); }
+.footer-col { flex: 1 1 0; min-width: 0; padding: 20px; }
+.footer-logo { width: 84px; }
 .footer-title { color: #dadada; font-weight: 700; margin-bottom: 10px; }
 .footer-des { font-weight: 500; color: #9c9c9c; }
 .footer-link-row {
   display: flex; align-items: center; gap: 8px; margin-bottom: 10px;
 }
+.footer-col.logo-col { display: flex; align-items: center; justify-content: center; }
+.footer-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+.footer-row:last-child { margin-bottom: 0; }
+.footer-row .footer-title { margin-bottom: 0; min-width: 84px; }
+.footer-row .footer-des { margin-bottom: 0; }
+
+.footer-inline-group {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: 24px; justify-content: center;
+}
+.footer-inline-group .footer-row,
+.footer-inline-group .footer-link-row { margin-bottom: 0; }
 .footer-icon {
   display: inline-flex; align-items: center; justify-content: center;
   width: 28px; height: 28px;
@@ -297,12 +325,61 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Pretendard'; margin: 0; font-weight: 700;
 
 .footer-bottom {
   width: 100%;
-  border-top: 1px solid #fff;
   padding: 12px 0 10px;
   text-align: center;
 }
 .footer-bottom p { margin: 0 0 10px; color: #9c9c9c; }
 .footer-bottom p:last-child { margin-bottom: 0; }
+
+/* ============ LIGHTBOX (space.html zone images) ============ */
+.zone-card img { cursor: zoom-in; }
+.lightbox {
+  position: fixed; inset: 0; z-index: 900;
+  background: rgba(0,0,0,.9);
+  display: none;
+  align-items: center; justify-content: center;
+  padding: 40px;
+}
+.lightbox.is-open { display: flex; }
+.lightbox img {
+  max-width: 100%; max-height: 100%;
+  width: auto; height: auto;
+  box-shadow: 0 30px 80px rgba(0,0,0,.5);
+}
+.lightbox-close {
+  position: absolute; top: 20px; right: 20px;
+  width: 44px; height: 44px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: none; border: 1px solid rgba(255,255,255,.4); color: #fff;
+  cursor: pointer; transition: background-color .2s ease, border-color .2s ease;
+}
+.lightbox-close:hover { background: rgba(255,255,255,.12); border-color: #fff; }
+.lightbox-close:focus-visible { outline: none; box-shadow: 0 0 0 2px #000, 0 0 0 4px #fff; }
+
+.lightbox-nav {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 52px; height: 52px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: none; border: 1px solid rgba(255,255,255,.4); color: #fff;
+  cursor: pointer; transition: background-color .2s ease, border-color .2s ease;
+  border-radius: 999px;
+}
+.lightbox-nav:hover { background: rgba(255,255,255,.12); border-color: #fff; }
+.lightbox-nav:active { transform: translateY(-50%) scale(.94); }
+.lightbox-nav:focus-visible { outline: none; box-shadow: 0 0 0 2px #000, 0 0 0 4px #fff; }
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
+@media (max-width: 640px) {
+  .lightbox-nav { width: 42px; height: 42px; }
+  .lightbox-prev { left: 8px; }
+  .lightbox-next { right: 8px; }
+}
+
+.lightbox-count {
+  position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+  color: rgba(255,255,255,.75);
+  font-size: .875rem; font-weight: 600; letter-spacing: .04em;
+}
 
 /* ============ CTA strip (used to link to schedule.html) ============ */
 .cta-strip {

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Location — Catalystudio</title>
-<link rel="icon" href="./brand_logo/catalystudio_Logo_Black.png">
+<link rel="icon" href="./brand_logo/catalystudio_main_Logo_B.png">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
 <link rel="stylesheet" href="./css/style.css">
@@ -13,7 +13,7 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a href="./index.html" class="logo"><img src="./brand_logo/catalystudio_Logo_Black.png" alt="Catalystudio"></a>
+    <a href="./index.html" class="logo"><img src="./brand_logo/catalystudio_main_Logo_W.png" alt="Catalystudio"></a>
     <button class="nav-toggle" aria-label="메뉴 열기">
       <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
     </button>
@@ -43,7 +43,10 @@
   <div class="wrap" style="padding-bottom:60px;">
     <div class="about-row">
       <div class="about-media">
-        <img class="map-frame" src="https://placehold.co/900x675/E3D8C2/3A3327?text=Map+%2F+Naver" alt="카탈리스튜디오 위치 지도">
+        <iframe class="map-frame"
+          src="https://www.google.com/maps?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%B4%89%EC%9D%80%EC%82%AC%EB%A1%9C68%EA%B8%B8%2021%20%EC%B9%B4%ED%83%88%EB%A6%AC%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4&output=embed"
+          style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="카탈리스튜디오 위치 지도"></iframe>
       </div>
       <div class="about-copy">
         <div class="info-row" style="border-top:none;">
@@ -58,9 +61,11 @@
           <div class="info-label p-14">주차</div>
           <div class="info-value p-16">건물 내 전용 주차 불가 · 인근 공영/민영 주차장 이용</div>
         </div>
-        <a href="https://naver.me/xM5Z46AY" target="_blank" rel="noopener" class="btn" style="margin-top:24px;">
-          네이버 지도로 길찾기
-        </a>
+        <div style="text-align:center;margin-top:24px;">
+          <a href="https://naver.me/xM5Z46AY" target="_blank" rel="noopener" class="btn">
+            네이버 지도로 길찾기
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -68,8 +73,8 @@
 
 <footer class="site-footer">
   <div class="wrap footer-box">
-    <div class="footer-col" style="max-width:220px;">
-      <img src="./brand_logo/catalystudio_Logo_Black.png" alt="Catalystudio" class="footer-logo">
+    <div class="footer-col logo-col">
+      <img src="./brand_logo/catalystudio_main_Logo_B.png" alt="Catalystudio" class="footer-logo">
     </div>
     <div class="footer-col">
       <div class="footer-title p-20">ABOUT</div>
@@ -79,19 +84,26 @@
       </p>
     </div>
     <div class="footer-col">
-      <a class="footer-link-row" href="./schedule.html">
-        <div class="footer-title p-20" style="margin-bottom:0;">RESERVATION</div>
-        <span class="footer-icon" aria-hidden="true">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </span>
-      </a>
-      <p class="footer-des p-14 footer-block">서울 강남구 봉은사로68길 21 지하1층</p>
-      <div class="footer-title p-20">CONTACT</div>
-      <p class="footer-des p-14 footer-block">Tel 010-8966-5460</p>
+      <div class="footer-inline-group">
+        <a class="footer-row footer-link-row" href="./schedule.html">
+          <span class="footer-title p-16" style="margin-bottom:0;">RESERVATION</span>
+          <span class="footer-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <div class="footer-row">
+          <span class="footer-title p-16">ADDRESS</span>
+          <span class="footer-des p-14">서울 강남구 봉은사로68길 21 지하1층</span>
+        </div>
+        <div class="footer-row">
+          <span class="footer-title p-16">CONTACT</span>
+          <span class="footer-des p-14">Tel 010-8966-5460</span>
+        </div>
+      </div>
     </div>
   </div>
   <div class="footer-bottom">
-    <p class="p-14">서울 강남구 봉은사로68길 21 지하1층 | Catalystudio</p>
+    <p class="p-14">서울 강남구 봉은사로68길 21 지하1층 | 상호명: Catalystudio | 대표: 김은영 | 사업자등록번호: 211-88-46865</p>
     <p class="p-14">copyright &copy; CATALYSTUDIO</p>
   </div>
 </footer>

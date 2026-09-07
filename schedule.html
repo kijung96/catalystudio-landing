@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Schedule — Catalystudio</title>
-<link rel="icon" href="./brand_logo/catalystudio_Logo_Black.png">
+<link rel="icon" href="./brand_logo/catalystudio_main_Logo_B.png">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
 <link rel="stylesheet" href="./css/style.css">
@@ -13,7 +13,7 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a href="./index.html" class="logo"><img src="./brand_logo/catalystudio_Logo_Black.png" alt="Catalystudio"></a>
+    <a href="./index.html" class="logo"><img src="./brand_logo/catalystudio_main_Logo_W.png" alt="Catalystudio"></a>
     <button class="nav-toggle" aria-label="메뉴 열기">
       <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
     </button>
@@ -44,10 +44,10 @@
 
 <!-- Pricing -->
 <section class="section">
-  <div class="wrap" style="padding-bottom:60px;">
+  <div class="wrap" style="padding-bottom:60px;text-align:center;">
     <div class="section-subtitle p-20">이용 요금</div>
 
-    <div class="price-card" style="max-width:480px;margin-top:20px;">
+    <div class="price-card" style="max-width:480px;margin:20px auto 0;text-align:left;">
       <div class="price-row" style="border-top:none;">
         <div>
           <div class="info-label p-14">기본 요금 (6인 기준)</div>
@@ -64,7 +64,7 @@
       </div>
     </div>
 
-    <div class="offer-banner">
+    <div class="offer-banner" style="margin-left:auto;margin-right:auto;">
       <span class="offer-tag p-14">Open Offer</span>
       <span class="p-14">신규오픈 기념, 지금 예약 시 이용시간 <b>+1시간 무료</b></span>
     </div>
@@ -73,18 +73,18 @@
 
 <!-- Calendar + reservation -->
 <section class="section" style="border-top:1px solid #eee;">
-  <div class="wrap" style="padding-top:50px;padding-bottom:60px;">
+  <div class="wrap" style="padding-top:50px;padding-bottom:60px;text-align:center;">
     <div class="section-subtitle p-20">예약 현황 &amp; 예약하기</div>
 
-    <div style="display:grid;grid-template-columns:1fr;gap:30px;margin-top:20px;">
-      <div class="calendar-embed">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:30px;margin-top:20px;">
+      <div class="calendar-embed" style="max-width:720px;width:100%;text-align:center;">
         <p class="p-16" style="font-weight:700;margin-bottom:12px;">통합 예약 현황 캘린더</p>
         <iframe src="https://calendar.google.com/calendar/embed?src=e3d23c7c456f2e204920d4e682d0657de370cfeeb2186c5e03a4534ed84baa4d%40group.calendar.google.com&ctz=Asia%2FSeoul"
                 style="border:0" width="100%" height="600" frameborder="0" scrolling="no" loading="lazy"
                 title="카탈리스튜디오 예약 현황 캘린더"></iframe>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:12px;max-width:480px;">
+      <div style="display:flex;flex-direction:column;gap:12px;max-width:480px;width:100%;">
         <a href="https://hourplace.co.kr/place/62229" target="_blank" rel="noopener" class="btn btn-block" style="justify-content:space-between;">
           <span>아워플레이스에서 예약하기</span><span aria-hidden="true">→</span>
         </a>
@@ -104,8 +104,8 @@
 
 <footer class="site-footer">
   <div class="wrap footer-box">
-    <div class="footer-col" style="max-width:220px;">
-      <img src="./brand_logo/catalystudio_Logo_Black.png" alt="Catalystudio" class="footer-logo">
+    <div class="footer-col logo-col">
+      <img src="./brand_logo/catalystudio_main_Logo_B.png" alt="Catalystudio" class="footer-logo">
     </div>
     <div class="footer-col">
       <div class="footer-title p-20">ABOUT</div>
@@ -115,19 +115,26 @@
       </p>
     </div>
     <div class="footer-col">
-      <a class="footer-link-row" href="./schedule.html">
-        <div class="footer-title p-20" style="margin-bottom:0;">RESERVATION</div>
-        <span class="footer-icon" aria-hidden="true">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </span>
-      </a>
-      <p class="footer-des p-14 footer-block">서울 강남구 봉은사로68길 21 지하1층</p>
-      <div class="footer-title p-20">CONTACT</div>
-      <p class="footer-des p-14 footer-block">Tel 010-8966-5460</p>
+      <div class="footer-inline-group">
+        <a class="footer-row footer-link-row" href="./schedule.html">
+          <span class="footer-title p-16" style="margin-bottom:0;">RESERVATION</span>
+          <span class="footer-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <div class="footer-row">
+          <span class="footer-title p-16">ADDRESS</span>
+          <span class="footer-des p-14">서울 강남구 봉은사로68길 21 지하1층</span>
+        </div>
+        <div class="footer-row">
+          <span class="footer-title p-16">CONTACT</span>
+          <span class="footer-des p-14">Tel 010-8966-5460</span>
+        </div>
+      </div>
     </div>
   </div>
   <div class="footer-bottom">
-    <p class="p-14">서울 강남구 봉은사로68길 21 지하1층 | Catalystudio</p>
+    <p class="p-14">서울 강남구 봉은사로68길 21 지하1층 | 상호명: Catalystudio | 대표: 김은영 | 사업자등록번호: 211-88-46865</p>
     <p class="p-14">copyright &copy; CATALYSTUDIO</p>
   </div>
 </footer>
